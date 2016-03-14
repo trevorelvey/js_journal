@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/browser.js"></script>
+    <meta charset="utf-8">
+    <title>Journal</title>
+  </head>
+  <body>
+    <form id = "journal">
+      <div class="form-group">
+        <label for="title">Enter Journal Title:</label><br>
+        <input type="text" class="form-control" id = "title" placeholder="Title">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="input">Journal Entry:</label><br>
+        <textarea rows="10" class="form-control" id = "entry" placeholder="Type your entry here"></textarea>
+      </div>
+        <br>
+      <div class="btn-group">
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+    <h2 id="userTitle"></h2>
+  </body>
+</html>
