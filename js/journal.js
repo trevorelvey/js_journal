@@ -1,13 +1,17 @@
+var moment = require('moment');
+
 exports.Journal = function(title, entry) {
   this.title = title;
   this.entry = entry;
-  this.date = date;
 };
 
-String.prototype.wordCount = function() {
-  return this.entry //word count multiplier
+//word count multiplier
+exports.Journal.prototype.wordCount = function() {
+bodyCount = this.entry.split(' ').length;
+return bodyCount;
 };
 
-String.prototype.date = function() {
-  return moment().format("MMM do YY"); //date
+//date
+exports.Journal.prototype.date = function() {
+  return moment().format("MMM do YY");
 };
